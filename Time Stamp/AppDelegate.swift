@@ -36,7 +36,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         constructMenu()
         
-        _ = Timer.scheduledTimer(timeInterval: 2.5,
+        _ = Timer.scheduledTimer(timeInterval: 60,
         target: self,
         selector: #selector(printQuote(_:)),
         userInfo: nil,
