@@ -13,6 +13,9 @@
 		AABAC51C24351495006F6025 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AABAC51B24351495006F6025 /* Preview Assets.xcassets */; };
 		AABAC51F24351495006F6025 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AABAC51D24351495006F6025 /* Main.storyboard */; };
 		AABAC52B24351496006F6025 /* Time_StampTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABAC52A24351496006F6025 /* Time_StampTests.swift */; };
+		AABAC536243528D9006F6025 /* TimeStampViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABAC535243528D9006F6025 /* TimeStampViewController.swift */; };
+		AABAC53824354097006F6025 /* TimeStamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABAC53724354097006F6025 /* TimeStamp.swift */; };
+		AABAC53A243570C2006F6025 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABAC539243570C2006F6025 /* EventMonitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,9 @@
 		AABAC52624351496006F6025 /* Time StampTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Time StampTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AABAC52A24351496006F6025 /* Time_StampTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time_StampTests.swift; sourceTree = "<group>"; };
 		AABAC52C24351496006F6025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AABAC535243528D9006F6025 /* TimeStampViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStampViewController.swift; sourceTree = "<group>"; };
+		AABAC53724354097006F6025 /* TimeStamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStamp.swift; sourceTree = "<group>"; };
+		AABAC539243570C2006F6025 /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +85,12 @@
 			isa = PBXGroup;
 			children = (
 				AABAC51424351492006F6025 /* AppDelegate.swift */,
+				AABAC539243570C2006F6025 /* EventMonitor.swift */,
+				AABAC535243528D9006F6025 /* TimeStampViewController.swift */,
 				AABAC51624351492006F6025 /* ContentView.swift */,
 				AABAC51824351495006F6025 /* Assets.xcassets */,
 				AABAC51D24351495006F6025 /* Main.storyboard */,
+				AABAC53724354097006F6025 /* TimeStamp.swift */,
 				AABAC52024351495006F6025 /* Info.plist */,
 				AABAC52124351495006F6025 /* Time_Stamp.entitlements */,
 				AABAC51A24351495006F6025 /* Preview Content */,
@@ -207,7 +216,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AABAC536243528D9006F6025 /* TimeStampViewController.swift in Sources */,
+				AABAC53A243570C2006F6025 /* EventMonitor.swift in Sources */,
 				AABAC51724351492006F6025 /* ContentView.swift in Sources */,
+				AABAC53824354097006F6025 /* TimeStamp.swift in Sources */,
 				AABAC51524351492006F6025 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
