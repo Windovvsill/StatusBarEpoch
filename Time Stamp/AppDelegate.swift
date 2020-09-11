@@ -14,7 +14,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     var window: NSWindow!
 
-    //strong reference to retain the status bar item object
+    // Strong reference to retain the status bar item object
     var statusItem: NSStatusItem?
     
     let popover = NSPopover()
@@ -32,13 +32,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         button.image = NSImage(named: "MenuBarButton")
         button.title = String(format: "%.0f", (NSDate().timeIntervalSince1970 * 1000).rounded())
         button.target = self
-        button.action = #selector(printQuote(_:))
+        button.action = #selector(updateStatusBar(_:))
         
         constructMenu()
         
         _ = Timer.scheduledTimer(timeInterval: 60,
         target: self,
-        selector: #selector(printQuote(_:)),
+        selector: #selector(updateStatusBar(_:)),
         userInfo: nil,
         repeats: true)
         
@@ -55,7 +55,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Insert code here to tear down your application
     }
 
-    @objc func printQuote(_ sender: Any?) {
+    @objc func updateStatusBar(_ sender: Any?) {
         statusItem?.button?.title = String(format: "%.0f", (NSDate().timeIntervalSince1970 * 1000).rounded())
         statusItem?.button?.font = NSFont.monospacedSystemFont(ofSize: 0, weight: .regular)
     }
@@ -89,7 +89,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
       menu.addItem(NSMenuItem.separator())
       menu.addItem(NSMenuItem(title: "Quit", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q"))
 
-        statusItem?.menu = menu
+      statusItem?.menu = menu
     }
 }
 
