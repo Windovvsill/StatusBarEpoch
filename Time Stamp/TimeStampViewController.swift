@@ -16,8 +16,8 @@ class TimeStampViewController: NSViewController, NSTextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do view setup here.
         
+        // Do view setup here.
         textField.delegate = self
     }
     
@@ -34,7 +34,7 @@ class TimeStampViewController: NSViewController, NSTextFieldDelegate {
     }
     
     func renderOutput(obj: Notification) {
-        // check the identifier to be sure you have the correct textfield if more are used
+        // Check the identifier to be sure you have the correct textfield if more are used
         if let textField = obj.object as? NSTextField, self.textField.identifier == textField.identifier {
             print("\n\nMy own textField = \(String(describing: self.textField))\nNotification textfield = \(textField)")
             print("\nChanged text = \(textField.stringValue)\n")
